@@ -10,17 +10,17 @@ A customer should be able to book a car for a period of time.
 
 It is not certain that the customer will be the person driving the car, so the driver must also be saved in the booking.
 
-    Basic information (first name, last name, social security number, address) should be saved for customers and also car drivers.
+Basic information (first name, last name, social security number, address) should be saved for customers and also car drivers.
 
-    Customers who often rent from the company should be able to receive a discount. There should be three level: Standard, Premium and Gold. Premium should give 10% discount and Gold should give 25% discount.
+Customers who often rent from the company should be able to receive a discount. There should be three level: Standard, Premium and Gold. Premium should give 10% discount and Gold should give 25% discount.
 
-    The car rental company currently has three car brands: Scoda, Volvo, BMW
+The car rental company currently has three car brands: Scoda, Volvo, BMW
 
-    Cars now have these different colors: Red, White, Black
+Cars now have these different colors: Red, White, Black
 
-    There are three sizes of cars: Minicar, Normal, SUV. If a customer rents a Minicar, he should receive a 50% discount. An SUV costs 2.5 times more than a Normal.
+There are three sizes of cars: Minicar, Normal, SUV. If a customer rents a Minicar, he should receive a 50% discount. An SUV costs 2.5 times more than a Normal.
 
-    Payment is made by invoice. The invoice must include such description and address. The system should keep track of whether an invoice is paid or not.
+Payment is made by invoice. The invoice must include such description and address. The system should keep track of whether an invoice is paid or not.
  
 Create the  tables and columns you think are needed.
 
