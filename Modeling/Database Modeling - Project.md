@@ -30,7 +30,7 @@ Deliver your project to another group:
 - The specification in natural language (which a client / project manager can understand)
 - Screenshot on the lastest ER-diagram and database-diagram
 
-## Criticism (1h)
+## Criticism 
 
 Read another group's specification. Look at the ER-diagram and database diagram.
 
