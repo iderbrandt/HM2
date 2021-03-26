@@ -74,10 +74,7 @@ När ni samlar entiteter, sök efter:
 
 # Vid Critics (innan kl 13)
 
-Niklas skickar till Tobias
+Niklas  <-----> Tobias
 
-Tobias skickar till Alberto
+Alberto <-----> Max
 
-Alberto skickar till Max
-
-Max skickar till Niklas
