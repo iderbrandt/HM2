@@ -22,17 +22,19 @@ Is a GUID unique?
 - If every person on earth get one million pappers and they start to count each atom => 10^10 * 10^22 * 10^6 = 10^38
 
 Advantages with "Sequential GUID" (instead of ordinary GUID's)
-- Better usage of index
-- Allow usage of clustered index 
 - Less disk usage
-- 20-25% of performance increase at a minimum cost
+- Higher performance when inserting rows with sequential guid
+- Create new sequential id is a bit faster than a new GUID (you don't need random function)
+
+Disadvantages with "Sequential GUID"
+- Easier to guess the number (bad for security reasons)
+- Fewer numbers than ordinary GUID
+- Disadvantage with microsoft solution: when you reboot a new value is set (that may be lower)
 
 Detail, info about "clustered index":
 - Can only be one per table
 - In what order the rows are stored physically on disk
 
-Disadvantages with "Sequential GUID"
-- Easier to guess the number (bad for security reasons)
 
 https://betterexplained.com/articles/the-quick-guide-to-guids/
 
