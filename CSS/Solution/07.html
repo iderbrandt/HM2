@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        /* unvisited link */
+        a:link {
+            color: red;
+        }
+
+        /* visited link */
+        a:visited {
+            color: green;
+        }
+
+        /* mouse over link */
+        a:hover {
+            color: hotpink;
+        }
+
+        /* selected link */
+        a:active {
+            color: blue;
+        }
+
+        .box {
+            background-color: black;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .box:hover {
+            background-color: chocolate;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .my-texts p {
+            color: seagreen
+        }
+
+        .my-texts p:first-child {
+            color: red;
+        }
+
+        .my-texts p:last-child {
+            color: blue;
+        }
+
+        span::after {
+            content: "This will be added after";
+            background-color: yellow;
+            color: red;
+            font-weight: bold;
+        }
+
+        .poem:not(.humble)::first-letter {
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p><b><a href="https://google.com">This is a link</a></b></p>
+
+    <div class="box">Mouse me over!</div>
+
+    <div class="my-texts">
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+        <p>This is some text.</p>
+    </div>
+
+    <span>aa</span>
+    <span>bb</span>
+    <span>cc</span>
+
+    <div class="poem">
+        Lorem ipsum dolor sit.
+    </div>
+
+    <div class="poem">
+        Dicta veniam aut eaque mollitia sit.
+    </div>
+    <div class="poem">
+        Beatae delectus dolor ea quia.
+    </div>
+
+    <div class="poem humble">
+        Soluta sit ducimus necessitatibus totam
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header menu'
+                'left left main main main menu'
+                'footer footer footer footer footer menu';
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid using "grid-area"</h1>
+
+    <div class="grid-container">
+        <div style="grid-area: header">Header</div>
+        <div style="grid-area: menu">Menu</div>
+        <div style="grid-area: main">Main</div>
+        <div style="grid-area: left">Left</div>
+        <div style="grid-area: footer">Footer</div>
+    </div>
+
+</body>
+
+</html>

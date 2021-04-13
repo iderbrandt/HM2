@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: grey;
+            margin: 0;
+        }
+
+        div {
+            border: solid 5px;
+            background: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .divider {
+            background-color: #00f9ff;
+            border-color: #00f9ff;
+            font-size: 30px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="divider">
+        Margin
+    </div>
+
+    <div style="margin:30px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <div class="divider">
+        Padding
+    </div>
+
+    <div style="padding:30px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <div class="divider">
+        Same width but different padding
+    </div>
+
+    <div style="width:500px;padding:20px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div style="width:500px;padding:80px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <div class="divider">
+        Same but with border-box
+    </div>
+
+    <div style="box-sizing: border-box;width:500px;padding:20px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+    <div style="box-sizing: border-box;width:500px;padding:80px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+
+    <div class="divider">
+        The end
+    </div>
+</body>
+
+</html>

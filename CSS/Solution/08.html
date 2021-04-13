@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: DodgerBlue;
+        }
+
+        .flex-container>div {
+            background-color: #f1f1f1;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 75px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexible Boxes</h1>
+
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <h1>Wrap</h1>
+
+    <div class="flex-container" style="flex-wrap: wrap;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <h1>flex-direction: column</h1>
+
+    <div class="flex-container" style="flex-direction: column">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+
+    <h1>flex-direction: row-reverse</h1>
+
+    <div class="flex-container" style="flex-direction: row-reverse">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </div>
+
+    <h1>justify-content: center</h1>
+
+    <div class="flex-container" style="justify-content: center;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h1>justify-content: space-around</h1>
+
+    <div class="flex-container" style="justify-content: space-around;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+    <h1>justify-content: space-between</h1>
+
+    <div class="flex-container" style="justify-content: space-between;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h1>align-items: center</h1>
+
+    <div class="flex-container" style="align-items: center;height:300px">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+
+</body>
+
+</html>
