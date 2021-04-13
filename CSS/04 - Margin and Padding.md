@@ -4,6 +4,7 @@ References
 - https://www.w3schools.com/css/css_margin.asp 
 - https://www.w3schools.com/css/css_padding.asp
 - https://www.w3schools.com/css/css_boxmodel.asp
+- https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
 
 Hint, start with this styling
 
