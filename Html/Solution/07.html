@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+        }
+
+        table {
+            margin: 50px;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+    </style>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Director</th>
+            <th>Cast</th>
+        </tr>
+        <tr>
+            <td>The Seven Samurai</td>
+            <td>Akira Kurosawa</td>
+            <td>Toshiro Mifune, Takashi Shimura</td>
+        </tr>
+        <tr>
+            <td>Bonnie and Clyde</td>
+            <td>Arthur Penn</td>
+            <td>Warren Beatty, Faye Dunaway</td>
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Director</th>
+            <th colspan="2">Cast</th>
+        </tr>
+        <tr>
+            <td>The Seven Samurai</td>
+            <td>Akira Kurosawa</td>
+            <td>Toshiro Mifune</td>
+            <td>Takashi Shimura</td>
+        </tr>
+        <tr>
+            <td>Bonnie and Clyde</td>
+            <td>Arthur Penn</td>
+            <td>Warren Beatty</td>
+            <td>Faye Dunaway</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>This is a caption for the table</caption>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Director</th>
+            <th>Cast</th>
+        </tr>
+        <tr>
+            <td rowspan="2" style="background-color: seagreen;width:50px"> </td>
+            <td>The Seven Samurai</td>
+            <td>Akira Kurosawa</td>
+            <td>Toshiro Mifune, Takashi Shimura</td>
+        </tr>
+        <tr>
+            <td>Bonnie and Clyde</td>
+            <td>Arthur Penn</td>
+            <td>Warren Beatty, Faye Dunaway</td>
+        </tr>
+        <tr>
+            <td style="background-color:red"></td>
+            <td>Reservoir Dogs</td>
+            <td>Quentin Tarantino</td>
+            <td>Harvey Keitel,Tim Roth, Chris Penn</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

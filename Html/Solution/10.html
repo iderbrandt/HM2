@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 50px
+        }
+
+        label,
+        input[type=submit] {
+            display: block;
+            margin-top: 20px
+        }
+
+        input:invalid {
+            border: solid 1px red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+
+        <label for="street">Street: </label>
+        <input type="text" id="street">
+        <label for="city">City (with a tooltip)</label>
+        <input type="text" id="city" title="Enter your city">
+        <label for="city">Zipcode (pattern NNN NN and must be filled in)</label>
+        <input type="text" id="city" required pattern="\d\d\d \d\d">
+        <label>Home type</label>
+        <select>
+            <option>House</option>
+            <option>Apartment</option>
+            <option>Other</option>
+        </select>
+
+        <label>Wifi</label><input type="checkbox" name="wifi" value="true" />
+        <label>TV</label><input type="checkbox" name="tv" value="true" />
+        <label>Washing machine</label><input type="checkbox" name="washing" value="true" />
+
+        <label>Nr of beds</label>
+        <input type="radio" name="beds" value="0">None</input>
+        <input type="radio" name="beds" value="1">One</input>
+        <input type="radio" name="beds" value="2">Two</input>
+        <input type="radio" name="beds" value="3">Three</input>
+
+        <label>Extras</label>
+        <select multiple>
+            <option>Wifi</option>
+            <option>TV</option>
+            <option>Washing machine</option>
+        </select>
+
+        <label for="currency">Prefered currency</label>
+        <input list="currencyList" id="currency" />
+
+        <datalist id="currencyList">
+            <option value="Euro">
+            <option value="Dollar">
+            <option value="DKK">
+            <option value="SEK">
+        </datalist>
+
+        <label>Password</label>
+        <input type="password">
+
+        <label>Available from (try min and max)</label>
+        <input type="date" min="2020-11-22" max="2020-12-23">
+
+        <label>Available from</label>
+        <input type="datetime-local" min="2020-11-22" max="2020-12-23">
+
+        <label>Available from (no active)</label>
+        <input disabled type="datetime-local" min="2020-11-22" max="2020-12-23">
+
+        <label>Picture of appartment</label>
+        <input type="file">
+
+        <label>Price: (min 100, max 1000, step 5)</label>
+        <input type="number" min="100" max="1000" step="5">
+
+        <label>Price: (can't change)</label>
+        <input type="number" value="2000" readonly>
+
+        <label>Homepage</label>
+        <input type="url">
+
+        <label>Phone number</label>
+        <input type="tel">
+
+        <label for="vol">Satisfaction</label>
+        <input type="range" name="vol" min="0" max="100" value="50">
+
+        <label>Other (set cols and rows)</label>
+        <textarea cols="30" rows="10"></textarea>
+
+        <input type="submit" value="Ok" />
+    </form>
+
+</body>
+
+</html>
