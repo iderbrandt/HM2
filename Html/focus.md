@@ -10,6 +10,7 @@ HTML
     <div>
     <span>
     <input>
+    <select>
     <button>
 
 CSS
@@ -22,26 +23,22 @@ CSS
     inline elements
     block elements
 
+CSS Selectors:
+
+    #myId
+
     .myClass
-    div.myClass
-    p.myClass
 
-    div .myClass
+    .myClass .otherClass
 
-    div .myClass .otherClass
+    p .myClass .otherClass
+
+    div p .myClass .otherClass
 
 
 General
 
     Know what's possible to do (you don't to remember the code, but you know what to google)
 
-    Have seen Grid Layout and Flexbox Layout
+    Have seen Grid Layout and Flexbox Layout (don't use "float")
 
-# Advanced
-
-Pick one concept that interests you and play around. E.g
-
-- Grid Layout
-- Flexbox Layout
-- Position fixed, absolute, relative
-- Pseuedo elements and pseudo classes
