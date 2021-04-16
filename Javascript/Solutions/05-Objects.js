@@ -75,7 +75,7 @@ function obj3() {
     console.log(`There are ${paintings.length} paintings in the array`);
     console.log(`${paintings[2].artist} painted ${paintings[2].name} in ${paintings[2].year}`);
     for (let p of paintings) {
-        console.log(`${p.name.padEnd(20)}${p.artist.padEnd(20)}${p.year}`);
+        console.log(p.name.padEnd(20) + p.artist.padEnd(20) + p.year);
     }
 }
 
