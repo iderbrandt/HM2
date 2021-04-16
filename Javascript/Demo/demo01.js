@@ -23,8 +23,8 @@ console.log(x + y)    // 5
 
 let name = "Kalle"
 
-let s = "Ditt " + name + " namn är " + name
-let s = `Ditt ${name} namn är ${name}`
+let s = "Vinnaren är " + name + ". " + name + "vann."
+let s = `Vinnaren är ${name}. ${name} vann.`
 
 // "{0} {1}", name, age
 
