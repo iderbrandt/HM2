@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05</title>
+    <link href="05.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <div class="calc-row">
+        <input id="num1" type="text" />
+        <div class="operator operator-add">+</div>
+        <input id="num2" type="text" />
+        <button onclick="calculate('+', 'num1', 'num2','result')">=</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <div class="calc-row">
+        <input id="num3" type="text" />
+        <div class="operator operator-sub">-</div>
+        <input id="num4" type="text" />
+        <button onclick="calculate('-', 'num3', 'num4','result2')">=</button>
+        <div class="result" id="result2"></div>
+    </div>
+
+    <script src="05.js"></script>
+</body>
+
+</html>
