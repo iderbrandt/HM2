@@ -1,0 +1,23 @@
+
+.calc-row .operator {
+    margin:0 20px;
+    text-align: center;
+}
+
+.calc-row {
+    margin:30px 0;
+}
+
+.calc-row button {
+    margin-left:20px;
+}
+
+.calc-row .result{
+    margin-left:20px;
+}
+
+.calc-row .result,
+.calc-row input
+ {
+    text-align:right;
+}
