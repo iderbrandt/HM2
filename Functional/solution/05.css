@@ -1,0 +1,38 @@
+
+body {
+    margin:100px;
+}
+
+body, input, button {
+    font-family:arial;
+    font-size:50px;
+}
+
+.calc-row{
+    margin:30px 0;
+    display: grid;
+    grid-template-columns: 200px 50px 200px 120px auto;
+}
+
+.calc-row div{
+    text-align: center;
+}
+
+.calc-row input,
+.calc-row .result {
+    text-align:right;
+}
+
+.calc-row .result {
+    margin-left:30px;
+    border:dashed 1px;
+}
+
+.calc-row button{
+    margin-left:30px;
+}
+
+.calc-row .operator-add{
+    padding-top:5px; 
+}
+

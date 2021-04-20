@@ -1,0 +1,30 @@
+body {
+    padding-top:50px;
+}
+.calc-row .operator {
+    margin:0 20px;
+    text-align: center;
+}
+
+.calc-row {
+    margin:30px 0;
+}
+
+.calc-row button {
+    margin-left:20px;
+}
+
+.calc-row .result{
+    margin-left:20px;
+}
+
+.calc-row .result,
+.calc-row input
+ {
+    text-align:right;
+}
+
+.calc-row .invalid {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, .25);
+}

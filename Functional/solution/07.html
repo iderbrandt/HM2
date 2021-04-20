@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="07.css">
+
+    <!-- Registration for fontawesome is needed (to use the fonts) -->
+    <script src="https://kit.fontawesome.com/12e1fe401a.js" crossorigin="anonymous"></script>
+
+    <title>Calculator</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <form class="form-inline calc-row">
+            <input type="text" class="form-control" onkeyup="validate(this)">
+            <div class="operator"><i class="fas fa-plus"></i></div>
+            <input type="text" class="form-control" onkeyup="validate(this)">
+            <button onclick="calculate('+', this)" type="button" class="btn btn-primary"><i
+                    class="fas fa-equals"></i></button>
+            <input type="text" class="form-control result" readonly>
+        </form>
+
+        <form class="form-inline calc-row">
+            <input type="text" class="form-control" onkeyup="validate(this)">
+            <div class="operator"><i class="fas fa-minus"></i></div>
+            <input type="text" class="form-control" onkeyup="validate(this)">
+            <button onclick="calculate('-', this)" type="button" class="btn btn-primary"><i
+                    class="fas fa-equals"></i></button>
+            <input type="text" class="form-control result" readonly>
+        </form>
+    </div>
+
+    <script src="07.js"></script>
+
+</body>
+
+</html>
