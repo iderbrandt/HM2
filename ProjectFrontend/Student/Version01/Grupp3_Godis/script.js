@@ -1,11 +1,11 @@
 // global variables
 // TODO: Add all twelve images to candies
 
-//OO: Om ni vill, gör en loop som går från 1 till t.ex 8
+// OO: Om ni vill, gör en loop som går från 1 till t.ex 8
 let candies = ["./images/1.jpeg", "./images/2.jpeg", "./images/3.jpeg", "./images/4.jpeg", "./images/5.jpeg", "./images/6.jpeg", "./images/7.jpeg", "./images/8.jpeg" ];
 let candiesShow;
 
-//OO: Klura på namngivning. Generellt bör globala variabler ha tydligare namn än lokala (eftersom de lever längre)
+// OO: Klura på namngivning. Generellt bör globala variabler ha tydligare namn än lokala (eftersom de lever längre)
 let b = []; 
 const basketstart = '<div class="grid-container" id="shoppingbag">'; 
 const basketend = '</div>'
