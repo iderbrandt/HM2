@@ -1,19 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>01</title>
+<script>
+    // These three functions is better than the non-pure function described in the exercise
 
-</head>
-<body>
+    // A pure function (we don't change "array" or any other variable outside of this function)
 
-    <input id="num1" type="text" />
-    +
-    <input id="num2" type="text" />
-    <button onclick="sum()">=</button>
-    <span id="result"></span>
+    function sumNumbersExceptLastElement(array) {
+        let newArray = array.slice(0, array.length - 1)
 
-    <script src="01.js"></script>
-</body>
-</html>
+        let sum = 0
+
+        for (let element of newArray) {
+            sum += element
+        }
+
+        return sum
+    }
+
+    // Alternative with slice and reduce
+    function sumNumbersExceptLastElement_higherorder(array) {
+        return array
+            .slice(0, array.length - 1)
+            .reduce((element, result) => result + element)
+    }
+
+    // Alternative with one line:
+    const sumNumbersExceptLastElement_oneliner = (array) => array.slice(0, array.length - 1).reduce((element, result) => result + element)
+
+
+    let myArray = [1, 2, 3, 4, 888]
+
+    let result = sumNumbersExceptLastElement(myArray)
+
+    console.log("Sum of all numbers except last", result)  // 1+2+3+4 = 10
+
+    console.log("myArray", myArray)  // Better: myArray is untouched!
+
+</script>

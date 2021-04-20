@@ -12,24 +12,20 @@
         { make: 'Ford', model: 'Explorer', type: 'suv', price: 31660 }
     ];
 
+    function mostExpensive(make) {
 
-    const result = vehicles
-        .filter(v => v.make === 'Mazda' || v.make === 'Ford')
-        .map(v => `${v.make}: ${v.model} ${v.type.toUpperCase()}`)
+        let price = 0
 
+        for (let v of vehicles) {
+            if (v.make === make) {
+                price = Math.max(price, v.price)
+            }
+        }
+        return price
+    }
 
-    console.log(result); 
-
-
-    /*
-    
-    [
-        "Mazda: Mazda 6 SEDAN", 
-        "Mazda: CX-9 SUV", 
-        "Ford: F-150 TRUCK", 
-        "Ford: Fusion SEDAN", 
-        "Ford: Explorer SUV"
-    ]
-    
-    */
+    console.log(mostExpensive("Honda"));  // 24045
+    console.log(mostExpensive("Mazda"));  // 31520
+    console.log(mostExpensive("Toyota")); // 45560
+    console.log(mostExpensive("Ford"));   // 31660
 </script>

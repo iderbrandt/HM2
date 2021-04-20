@@ -2,7 +2,9 @@
 
     function firstElementLast(arr) {
 
-        return arr.slice(1).concat(arr[0])
+        let firstElement = arr.shift()
+
+        return arr.concat(firstElement)
 
     }
 
@@ -10,7 +12,7 @@
 
     const result = firstElementLast(original)
 
-    console.log("original", original) // [1,2,3,4]
+    console.log("original", original) // Problem: this is changed!
     console.log("result", result) // [2, 3, 4, 1]
 
 </script>

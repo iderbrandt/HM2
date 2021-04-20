@@ -13,13 +13,14 @@
     ];
 
 
-    const result = vehicles
-        .filter(v => v.make === 'Mazda' || v.make === 'Ford')
-        .map(v => `${v.make}: ${v.model} ${v.type.toUpperCase()}`)
+    let result=[]
+    for(let v of vehicles) {
+        if (v.make === 'Mazda' || v.make === 'Ford'){
+            result.push(`${v.make}: ${v.model} ${v.type.toUpperCase()}`)
+        }
+    }
 
-
-    console.log(result); 
-
+    console.log("result", result); 
 
     /*
     

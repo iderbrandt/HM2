@@ -1,12 +1,11 @@
 <script>
 
     function addElementsFirst(arr, element, nrOfTimes) {
-        let firstPart = []
-        for (let i = 0; i < nrOfTimes; i++) {
-            firstPart.push(element)
-        }
 
-        return firstPart.concat(arr)
+        for (let i = 0; i < nrOfTimes; i++) {
+            arr.unshift(element)
+        }
+        return arr
 
     }
 
@@ -14,7 +13,7 @@
 
     const result = addElementsFirst(original, "POW", 4)
 
-    console.log("original", original)
+    console.log("original", original) // Problem: this is changed!
     console.log("result", result) // [1, 2, 3, 4, "POW", "POW", "POW", "POW"]
 
 </script>

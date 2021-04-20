@@ -2,7 +2,7 @@
 
     function addElementsEnd(arr, element, nrOfTimes) {
         for (i = 0; i < nrOfTimes; i++) {
-            arr = arr.concat(element)
+            arr.push(element)
         }
         return arr
     }
@@ -11,6 +11,6 @@
 
     const result = addElementsEnd(original, "NEW", 3)
 
-    console.log("original", original) // Not changed (good)
-    console.log("result", result) // [1, 2, 3, 4, "NEW", "NEW", "NEW"]
+    console.log("original", original) // Problem: this is changed!
+    console.log("result", result)     // [1, 2, 3, 4, "NEW", "NEW", "NEW"]
 </script>

@@ -1,21 +1,20 @@
 <script>
 
-    const settings = Object.freeze({
+    const settings = {
         retireAge: 65
-    })
+    }
 
     function hasRetired(age) {
         return age >= settings.retireAge;
     }
 
-    // Still not possible (good)
+    // This can't be done , will give Uncaught TypeError: Assignment to constant variable. (good)
     // settings = {
     //     retireAge: 33
     // }
 
-    // And this is not possible (good)
-    // Detail: no error message is given
-    settings.retireAge = 33
+    // But we can still do this (bad)
+    //settings.retireAge = 33
 
     console.log("Has a person of 70 years retired?", hasRetired(70))
     console.log("Has a person of 60 years retired?", hasRetired(60))
