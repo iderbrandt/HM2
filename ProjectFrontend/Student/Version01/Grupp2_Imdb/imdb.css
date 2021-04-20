@@ -1,0 +1,50 @@
+body {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+/* OO: Ta bort sånt som inte används */
+#rating {
+    
+    
+}
+
+#userReview {
+    font-size: 20px;
+
+}
+
+#review {
+    
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.addedReview {
+   margin: 30px;
+   font-size: 15px;
+   font-family: 'Courier New', Courier, monospace;
+   display: grid;
+
+}
+
+.userName {
+    font-size: 15px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.timeStamp {
+    font-size: 8px;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.userText {
+    /* Lägg upprepande CSS'kod i en separat CSS-klass (då blir det mindre kod)*/
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}

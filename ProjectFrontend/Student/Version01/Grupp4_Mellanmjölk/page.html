@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="big">
+        <img src="arla.jpg" class="prod">
+        <div class="text">
+            <p>Arla</p>
+            <p>Mellanmjölk</p>
+            <p>10.90 kr/st</p>
+            <button class="button" onclick="decrease()">-</button>
+            <span id="amount" class="amount">0</span>
+            <button class="button" onclick="increase()">+</button>
+        </div>
+    </div>
+    <div id="cart" class="cart">Total: 0.00 kr</div>
+    <button class="kassan" onclick="kassan()">Till kassan</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

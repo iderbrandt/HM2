@@ -1,0 +1,51 @@
+body {
+    background-color: gray;
+}
+
+.conv-row {
+    margin: 0 20px;
+    text-align: center;
+}
+
+.conv-row button {
+    margin-left: 20px;
+}
+
+.conv-row .result {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.conv-row input {
+    text-align: right;
+}
+
+.text {
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+.form-select {
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    text-shadow: 2px 2px 5px darkgrey;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+}
+
+.center {
+    margin: auto;
+    width: 69%;
+    background-color: lightgrey;
+    padding: 10px;
+    border-radius: 10px;
+}
