@@ -1,0 +1,23 @@
+<script>
+
+    function sumExceptLastElement(array) {
+
+        array.pop() // ta bort sista elementet i arrayen
+
+        let sum = 0
+
+        for (let element of array) {
+            sum += element
+        }
+
+        return sum
+    }
+
+    let myArray = [1, 2, 3, 4, 888]
+
+    let result = sumExceptLastElement(myArray)
+
+    console.log("myArray", myArray)
+    console.log("result", result)  // 1 + 2 + 3 + 4 = 10
+
+</script>

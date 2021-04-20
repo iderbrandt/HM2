@@ -1,0 +1,22 @@
+<script>
+
+    // This is a function with side effects (not a "pure" function)
+    function square(number) {
+
+        text = "D'OH! "   // en sidoeffekt
+
+        return number * number
+    }
+
+    // This is a function without side effects (a pure function)
+    function square_pure(number) {
+        return number * number
+    }
+
+    let text = "13 * 13 = "
+    let x = square(13)
+    let result = text + x
+
+    console.log(result)
+
+</script>
