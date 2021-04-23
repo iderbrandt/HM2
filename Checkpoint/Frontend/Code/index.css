@@ -1,0 +1,31 @@
+/* You are not allowed to change this file */
+
+.blueborder {
+    border: solid 5px blue;
+}
+
+.redborder {
+    border: solid 5px red;
+}
+
+.mintbackground {
+    background:#c7ffe0;
+}
+
+
+body, button {
+    font: 40px Arial;
+}
+
+
+button,p, input {
+    margin:20px;
+    padding:20px;
+}
+p {
+    border: solid 5px transparent;
+    width:400px;
+    text-align: center;
+    transition-duration: 0.2s;
+    transform-origin: "center center"
+}
