@@ -1,0 +1,46 @@
+<script>
+
+    /*
+    In javascript you can create a "constructor function" (usually starts with capital letter)
+
+    This works like an class in Java or C#
+    */
+
+    function Person(first, last, age, eyecolor) {
+        this.firstName = first;
+        this.lastName = last;
+        this.age = age;
+        this.eyeColor = eyecolor;
+    }
+
+    const myFather = new Person("Mark", "Hamill", 50, "blue")
+    const myMother = new Person("Carrie", "Fisher", 48, "green")
+
+    console.log( myFather.firstName )
+    console.log( myMother.firstName )
+
+    myMother.favoriteFood = "Cheese"
+    myMother.untilRetire = function () {
+        return 65 - this.age
+    }
+    
+    console.log( myFather.favoriteFood ) // undefined
+    //console.log( myFather.untilRetire() ) // fel
+    console.log( myMother.favoriteFood ) // "Cheese"
+    console.log( myMother.untilRetire() ) // 17
+
+    // PROTOTYPE
+
+    Person.prototype.city = "Göteborg"
+
+    console.log( myFather.city )
+    console.log( myMother.city )
+
+    Person.prototype.fullName = function() {
+        return this.firstName + " " + this.lastName
+    }
+
+    console.log( myFather.fullName() ) // Mark Hamill
+    console.log( myMother.fullName() ) // Carrie Fisher
+
+</script>

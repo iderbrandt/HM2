@@ -1,0 +1,76 @@
+<script>
+    // Example of usage of "closure"
+
+    // Purpose of closure in javascript: to make a function have private variables
+
+    // Read more about closures: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+    
+    function volumeControl() {
+
+        console.log("volumeControl is run") // (This will only happen once)
+
+        // This variable is private (good). It's not accessable outside of "volumeControl"
+        let v = 0;
+
+        function increase() {
+            // This function have access to "v" above, even after "volumeControl" has closed
+            v++
+            if (v>5){
+                v=5
+            }
+        }
+
+        function decrease() {
+            v--
+            if (v<0){
+                v=0
+            }            
+        }
+
+        function getValue() {
+            return v
+        }
+
+        return {
+            increase: increase,
+            decrease: decrease,
+            getValue: getValue
+        }
+
+
+    };
+
+    let v = volumeControl()
+
+    console.log( v.getValue() )  // 0
+    
+    v.increase()
+    v.increase()
+    v.increase()
+
+    console.log( v.getValue() )  // 3
+
+    v.increase()
+    v.increase()
+    v.increase()
+    v.increase()
+    v.increase()
+
+    console.log( v.getValue() )  // 5
+
+    v.decrease()
+
+    console.log( v.getValue() )  // 4
+
+    // Create a new volumecontrol 
+
+    let v2 = volumeControl()
+
+    console.log( v2.getValue() )  // 0
+    
+    v2.increase()
+
+    console.log( v2.getValue() )  // 1
+
+
+</script>
