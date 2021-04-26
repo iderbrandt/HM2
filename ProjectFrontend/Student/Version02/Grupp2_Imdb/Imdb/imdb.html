@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imdb Component</title>
+    <link href="imdb.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+
+    <h2>Top rated movie</h2>
+
+    <div class="card">
+    <h3>The Shawshank Redemption</h3>
+
+    <a href="https://www.imdb.com/title/tt0111161/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=Z6E0THHYS5VBATKKZC51&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_1"
+        target="_blank">
+
+        <img alt="shawshank" src="img/shawshank.jpg" width="100"></a>
+
+
+
+    <div class="yourRating">Your rating</div>
+
+    <button class="button" onclick="removeOne(this)">-</button>
+    <button class="button" onclick="addOne()">+</button>
+
+    
+
+    <div id="rating">
+        5
+    </div>
+
+
+    <div id="userReview">User review</div>
+
+    <!--postedReview div not needed if using appendChild-->
+    <div id="postedReview"></div>
+    
+    <!--postedReview div not needed if using appendChild-->
+
+    <div id="review">
+        <input type="text" id="userName" placeholder="Your name" style="font-style: italic" />
+        <br>
+        <br>
+        <textarea id="enteredReview" name="review" rows="10" cols="30" placeholder="Your review"
+            style="font-style: italic"></textarea>
+    </div>
+    
+    <button onclick="submitReview()">Submit review</button>
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+    <h3>The Godfather</h3>
+
+    <a href="https://www.imdb.com/title/tt0068646/?pf_rd_m=A2FGELUUNOQJNL&pf_rd_p=e31d89dd-322d-4646-8962-327b42fe94b1&pf_rd_r=AZ1P3NE20ABETWQ8S10V&pf_rd_s=center-1&pf_rd_t=15506&pf_rd_i=top&ref_=chttp_tt_2"
+        target="_blank">
+
+        <img alt="godfather" src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY1200_CR107,0,630,1200_AL_.jpg" width="100"></a>
+
+    <div class="yourRating">Your rating</div>
+
+    <button class="button" onclick="removeOne(this)">-</button>
+    <button class="button" onclick="addOne()">+</button>
+
+    
+
+    <div id="rating">
+        5
+    </div>
+
+
+    <div id="userReview">User review</div>
+
+    <!--postedReview div not needed if using appendChild-->
+    <div id="postedReview"></div>
+    
+    <!--postedReview div not needed if using appendChild-->
+
+    <div id="review">
+        <input type="text" id="userName" placeholder="Your name" style="font-style: italic" />
+        <br>
+        <br>
+        <textarea id="enteredReview" name="review" rows="10" cols="30" placeholder="Your review"
+            style="font-style: italic"></textarea>
+    </div>
+    
+    <button onclick="submitReview()">Submit review</button>
+
+</div>
+    <script src="imdb.js"></script>
+</body>
+
+</html>

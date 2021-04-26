@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/12e1fe401a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+
+
+        <h1 class="rainbowtitle">Converto</h1>
+        <p>Enter value and choose conversion</p>
+
+        <form class="center form-inline conv-row">
+
+            <label class="text" for="num1"></label>
+            <input id="num1" type="text" class="form-control" />
+            <select id="valueFrom" class="form-select" onclick="calculateFirst('num1', 'valueFrom', 'valueTo', 'result')">
+                <option value="fromKm">Km</option>
+                <option value="fromMiles">Miles</option>
+                <option value="fromNautMiles">Nautical Miles</option>
+                
+            </select>
+
+            <select id="valueTo" class="form-select" onclick="calculateFirst('num1', 'valueFrom', 'valueTo', 'result')">
+                <option value="toKm">Km</option>
+                <option value="toMiles">Miles</option>
+                <option value="toNautMiles">Nautical Miles</option>
+
+            </select>
+
+            <button type="button" class="btn btn-secondary" onclick="calculateFirst('num1', 'valueFrom', 'valueTo', 'result')"><i
+                class="fas fa-equals"></i></button>
+            <input id="result" type="text" class="form-control result" readonly> </span>
+        </form>
+
+
+        <p></p>
+
+
+        <form class="center form-inline conv-row">
+
+            <label class="text" for="num2"></label>
+            <input id="num2" type="text" class="form-control" />
+            <select id="valueFrom2" class="form-select" onclick="calculateFirst('num2', 'valueFrom2', 'valueTo2', 'result2')">
+                <option value="fromKm">Km</option>
+                <option value="fromMiles">Miles</option>
+                <option value="fromNautMiles">Nautical Miles</option>
+                
+            </select>
+
+            <select id="valueTo2" class="form-select" onclick="calculateFirst('num2', 'valueFrom2', 'valueTo2', 'result2')">
+                <option value="toKm">Km</option>
+                <option value="toMiles">Miles</option>
+                <option value="toNautMiles">Nautical Miles</option>
+
+            </select>
+
+            <button type="button" class="btn btn-secondary" onclick="calculateFirst('num2', 'valueFrom2', 'valueTo2', 'result2')"><i
+                class="fas fa-equals"></i></button>
+            <input id="result2" type="text" class="form-control result" readonly> </span>
+        </form>
+
+
+        <script src="converterdeluxe2.js"></script>
+</body>
+
+</html>

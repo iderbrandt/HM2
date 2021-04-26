@@ -1,0 +1,52 @@
+body {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+#card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 50px;
+}
+
+.yourRating {
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+#userReview {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#review {
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.addedReview {
+   margin: 30px;
+   font-size: 15px;
+   font-family: 'Courier New', Courier, monospace
+}
+
+.userName {
+    font-weight: bold;
+}
+
+.timeStamp {
+    font-size: 8px;
+    color: grey;
+}
+.userText {
+    font-style: italic;
+}
